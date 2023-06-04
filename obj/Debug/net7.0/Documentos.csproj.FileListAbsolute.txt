@@ -1,0 +1,15 @@
+/home/everson/Documentos/project/bin/Debug/net7.0/Documentos
+/home/everson/Documentos/project/bin/Debug/net7.0/Documentos.deps.json
+/home/everson/Documentos/project/bin/Debug/net7.0/Documentos.runtimeconfig.json
+/home/everson/Documentos/project/bin/Debug/net7.0/Documentos.dll
+/home/everson/Documentos/project/bin/Debug/net7.0/Documentos.pdb
+/home/everson/Documentos/project/obj/Debug/net7.0/Documentos.csproj.AssemblyReference.cache
+/home/everson/Documentos/project/obj/Debug/net7.0/Documentos.GeneratedMSBuildEditorConfig.editorconfig
+/home/everson/Documentos/project/obj/Debug/net7.0/Documentos.AssemblyInfoInputs.cache
+/home/everson/Documentos/project/obj/Debug/net7.0/Documentos.AssemblyInfo.cs
+/home/everson/Documentos/project/obj/Debug/net7.0/Documentos.csproj.CoreCompileInputs.cache
+/home/everson/Documentos/project/obj/Debug/net7.0/Documentos.dll
+/home/everson/Documentos/project/obj/Debug/net7.0/refint/Documentos.dll
+/home/everson/Documentos/project/obj/Debug/net7.0/Documentos.pdb
+/home/everson/Documentos/project/obj/Debug/net7.0/Documentos.genruntimeconfig.cache
+/home/everson/Documentos/project/obj/Debug/net7.0/ref/Documentos.dll
