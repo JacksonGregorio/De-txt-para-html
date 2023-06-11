@@ -38,6 +38,7 @@ namespace projeto_nelson
 
         static void Main(string[] args)
         {
+            //Caminho do arquivo de entrada TXT
             string arquivoTxt = "./public/teste.txt";
 
             // Caminho do arquivo de saída HTML
