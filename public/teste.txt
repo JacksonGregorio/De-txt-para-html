@@ -1,9 +1,8 @@
-| button:Enviar                                 
-| label:Nome:                                   
-| button:Clique aqui                            
-| label:Idade:                                  
-| button:Enviar formulário                      
-|  _
-|  | Exemplo de linha com caracteres especiais 
-|  _
-| button:Cancelar
+| escolha o time:  combobox:[option1:spfc,option2:palmeiras] 
+|
+|                  text:Nome
+|
+|
+|
+|
+|                                          button:Enviar
