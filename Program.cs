@@ -18,7 +18,11 @@ namespace projeto_nelson
             } else if(typeTag == "label"){
                 startTag = "<label>";
                 endTag = "</label>";
-            } else {
+            } else if(typeTag == "nelsonlove"){
+                startTag = "<h1 class='fireworks-animation'>Love Nelson Junior I love you";
+                endTag = "</h1>";
+            }
+            else {
                 startTag = "<p>";
                 endTag = "</p>";
             }
@@ -71,6 +75,11 @@ namespace projeto_nelson
                         else if (conteudo.Contains("label:"))
                         {
                            writer.WriteLine(returnLineHtml(conteudo, "label"));
+                        }
+                        //Verificar Se a linha tem nelsonlove              
+                        else if (conteudo.Contains("nelsonlove:"))
+                        {
+                           writer.WriteLine(returnLineHtml(conteudo, "nelsonlove"));
                         }
                         // Verificar se a linha contém caracteres "_" ou "|"
                         else if (conteudo.Contains("_") || conteudo.Contains("|"))
