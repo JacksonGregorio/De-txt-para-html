@@ -1,0 +1,10 @@
+| escolha o time:  combobox:[spfc,palmeiras] 
+|
+|                  text:Nome
+|
+|       radio:[spfc,palmeiras] 
+|
+|                      checkbox:[spfc,palmeiras] 
+|
+|
+|                                          button:Enviar

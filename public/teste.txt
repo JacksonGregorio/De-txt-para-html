@@ -1,8 +1,0 @@
-| escolha o time:  combobox:[option1:spfc,option2:palmeiras] 
-|
-|                  text:Nome
-|
-|
-|
-|
-|                                          button:Enviar
