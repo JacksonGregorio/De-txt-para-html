@@ -37,9 +37,9 @@ namespace projeto_nelson
             string lineHtml = "";
 
             if(typeTag == "button") // Caso o tipo da tag for button
-                lineHtml = Regex.Replace(content, @"button:(\w+)", $@"<input{s}type=""button""{s}value=""$1"">");
+                lineHtml = Regex.Replace(content, @"button:(\w+ ?\w*)", $@"<input{s}type=""button""{s}value=""$1"">");
             else if(typeTag == "text") // Caso o tipo da tag seja text
-                lineHtml = Regex.Replace(content, @"text:(\w+)", $@"$1:{s}<input{s}type=""text"">");
+                lineHtml = Regex.Replace(content, @"text:(\w+ ?\w*)", $@"$1:{s}<input{s}type=""text"">");
             else { // Caso o tipo da tag do inṕut seja selecionavel (combobox/radio/checkbox)
                 
                 // Regex para verificar as options após ":"
@@ -83,7 +83,7 @@ namespace projeto_nelson
                 espaço " ". 
             */
 
-            return lineHtml.Replace(" ", "&nbsp;&nbsp;").Replace(s, " ");
+            return lineHtml.Replace(" ", "&nbsp;").Replace(s, " ");
         }
 
         static void Main(string[] args)

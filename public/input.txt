@@ -1,10 +1,10 @@
-| escolha o time:  combobox:[spfc,palmeiras] 
+|        escolha o time:  combobox:[spfc kk,palmeiras kk] 
 |
-|                  text:Nome
+|                                       text:nome kk
 |
-|       radio:[spfc,palmeiras] 
+|       radio:[spfc kk,palmeiras kk]                fdjioasjfajgbjsbgj
 |
-|                      checkbox:[spfc,palmeiras] 
+|                      checkbox:[spfc kk,palmeiras kk] 
+|    fsjfshh
 |
-|
-|                                          button:Enviar
+|                                          button:Enviar Formulario
