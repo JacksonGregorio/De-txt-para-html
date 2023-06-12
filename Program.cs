@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -32,6 +32,11 @@ namespace projeto_nelson
             return sb.ToString(); // Converte o objeto da classe StringBuilder para string
         }
 
+        static string returnlinhasurprise() {
+
+            return "<h1> Nelson i love you </h1>";
+
+        }
         // Função que retornara a linha html, com base no conteudo passado e o tipo da tag.
         static string returnLineHtml(string content, string typeTag) {
             string lineHtml = "";
@@ -47,6 +52,8 @@ namespace projeto_nelson
                 
                 lineHtml = Regex.Replace(content, pattern, match =>
                 {   
+
+
                     string optionsStr = match.Groups[1].Value; // Pega as opções dentro de :[options] e retorna uma string.
                     string[] options = optionsStr.Split(','); // Pega a string e transforma em um array separando onde houver ",".
                     
@@ -107,6 +114,7 @@ namespace projeto_nelson
                     writer.WriteLine("<html>");
                     writer.WriteLine("<head>");
                     writer.WriteLine("<title>Arquivo HTML gerado</title>");
+                    writer.WriteLine("<style>h1 {text-align: center; font-family: Arial, sans-serif; font-size: 48px; color: #FF0000; text-shadow: 2px 2px 4px #000000;} @keyframes fireworks-animation {0% {color: #FF0000; text-shadow: 2px 2px 4px #000000;} 14.285% {color: #FF8000; text-shadow: 2px 2px 4px #000000;} 28.57% {color: #FFFF00; text-shadow: 2px 2px 4px #000000;} 42.855% {color: #00FF00; text-shadow: 2px 2px 4px #000000;} 57.14% {color: #0000FF; text-shadow: 2px 2px 4px #000000;} 71.425% {color: #8000FF; text-shadow: 2px 2px 4px #000000;} 85.71% {color: #FF00FF; text-shadow: 2px 2px 4px #000000;} 100% {color: #FF0080; text-shadow: 2px 2px 4px #000000;}} h1.fireworks-animation {animation: fireworks-animation 2s infinite;}</style>");
                     writer.WriteLine("</head>");
                     writer.WriteLine("<body>");
                     writer.WriteLine("<form>");
@@ -115,6 +123,9 @@ namespace projeto_nelson
                     foreach (string linha in linhas)
                     {
                         string contentLine = linha;
+
+                        if (contentLine.Contains("surprisecode"))
+                            contentLine = returnlinhasurprise(); // Se contiver chama a função passando o conteudo até aqui e o tipo como "text"
                         
                         // Verifica se a linha contem a instrução para a geração de um botão
                         if (contentLine.Contains("button:"))
